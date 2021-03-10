@@ -1,0 +1,12 @@
+from tkinter import *
+a = Tk()
+a.geometry("400x400")
+a.resizable(width=False, height=False)
+a.configure(bg="pink", cursor="heart")
+#img = PhotoImage(file="flamingo.png")
+canvas = Canvas(a, width = 400, height = 400, bg = "pink",bd=0, highlightthickness=0,)      
+canvas.pack()
+#canvas.create_image(20,20,anchor=NW, image=img) 
+a.title("flamingo")
+#a.iconphoto(False, img)
+a.mainloop()
