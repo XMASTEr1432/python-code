@@ -2,8 +2,8 @@ import cv2
 import os
 import numpy as np
 
-img_rgb = cv2.imread('hed_minia.jpg')
-template = cv2.imread('hed.png')
+img_rgb = cv2.imread('super-mario-bros.jpg') #image where we want to find goomba
+template = cv2.imread('goomba.png') #look for goomba
 w, h = template.shape[:-1]
 
 res = cv2.matchTemplate(img_rgb, template, cv2.TM_CCOEFF_NORMED)
